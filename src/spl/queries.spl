@@ -1,0 +1,2 @@
+index=banking source=prediction_events
+| stats count avg(latency_ms) by decision

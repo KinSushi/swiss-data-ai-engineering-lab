@@ -1,0 +1,8 @@
+# Extract request_id from structured logs
+request_id=(req_[0-9]+)
+
+# Extract ISO-like timestamp at line start
+^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z
+
+# Detect transaction IDs
+tx_[0-9]{3,}

@@ -1,0 +1,10 @@
+groups:
+  - name: synthetic-risk-api
+    rules:
+      - alert: HighPredictionErrorRate
+        expr: prediction_error_rate > 0.05
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: Prediction API error rate is above threshold

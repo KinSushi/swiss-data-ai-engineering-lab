@@ -1,0 +1,2 @@
+index=synthetic_risk_api "decision=review"
+| stats count avg(latency_ms) by host

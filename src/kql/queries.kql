@@ -1,0 +1,4 @@
+PredictionEvents
+| where Timestamp > ago(1h)
+| summarize Count=count(), AvgLatency=avg(LatencyMs) by Decision
+| order by Count desc

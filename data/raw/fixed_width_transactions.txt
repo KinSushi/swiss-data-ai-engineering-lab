@@ -1,0 +1,2 @@
+tx_006    C006      A006      00000150.00CHF20260610approved       
+tx_007    C007      A007      00002000.00EUR20260610review_required

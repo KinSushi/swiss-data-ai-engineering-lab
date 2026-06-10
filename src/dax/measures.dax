@@ -1,0 +1,3 @@
+Total Amount = SUM(Transactions[amount])
+Negative Amount Count = COUNTROWS(FILTER(Transactions, Transactions[amount] < 0))
+Quality Score = DIVIDE([Valid Transaction Count], [Transaction Count])

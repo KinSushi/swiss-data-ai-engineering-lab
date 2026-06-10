@@ -1,0 +1,11 @@
+artifact_path: synthetic_fraud_risk_scorer
+flavors:
+  python_function:
+    loader_module: mlflow.pyfunc
+    python_version: 3.12.0
+model_uuid: synthetic-demo-model-0001
+run_id: synthetic-run-0001
+signature:
+  inputs: '[{"name": "amount", "type": "double"}, {"name": "currency", "type": "string"}]'
+  outputs: '[{"name": "risk_score", "type": "double"}, {"name": "decision", "type": "string"}]'
+utc_time_created: '2026-06-10 08:00:00.000000'

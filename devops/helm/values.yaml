@@ -1,0 +1,6 @@
+replicaCount: 1
+image:
+  repository: synthetic-risk-api
+  tag: latest
+service:
+  port: 80

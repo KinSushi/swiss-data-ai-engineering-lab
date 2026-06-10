@@ -1,0 +1,12 @@
+application:
+  name: swiss-data-ai-engineering-lab
+  environment: development
+
+data_quality:
+  allowed_currencies:
+    - CHF
+    - EUR
+    - USD
+    - GBP
+  fail_on_duplicate_transaction_id: true
+  fail_on_negative_amount: false

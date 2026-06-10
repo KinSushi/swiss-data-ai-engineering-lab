@@ -1,0 +1,7 @@
+- name: Synthetic lab server preparation
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Show environment
+      debug:
+        msg: "Prepare local synthetic Data & AI lab environment"

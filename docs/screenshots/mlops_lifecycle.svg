@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="410" viewBox="0 0 1000 410">
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker></defs>
+  <text x="32" y="42" font-size="26" font-weight="800" fill="#0f172a">MLOps lifecycle</text>
+
+    <rect x="40" y="100" width="170" height="90" rx="12" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="56" y="128" font-size="16" font-weight="700" fill="#111827">Train</text>
+    <text x="56" y="152" font-size="12" fill="#374151">features · metrics</text>
+    <path d="M210 145 L250 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="260" y="100" width="170" height="90" rx="12" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="276" y="128" font-size="16" font-weight="700" fill="#111827">Package</text>
+    <text x="276" y="152" font-size="12" fill="#374151">MLmodel</text>
+    <path d="M430 145 L470 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="480" y="100" width="170" height="90" rx="12" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="496" y="128" font-size="16" font-weight="700" fill="#111827">Serve</text>
+    <text x="496" y="152" font-size="12" fill="#374151">FastAPI</text>
+    <path d="M650 145 L690 145" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="700" y="100" width="170" height="90" rx="12" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="716" y="128" font-size="16" font-weight="700" fill="#111827">Monitor</text>
+    <text x="716" y="152" font-size="12" fill="#374151">drift · latency</text>
+
+    <rect x="280" y="250" width="200" height="90" rx="12" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="296" y="278" font-size="16" font-weight="700" fill="#111827">Govern</text>
+    <text x="296" y="302" font-size="12" fill="#374151">model card</text>
+
+    <rect x="540" y="250" width="200" height="90" rx="12" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+    <text x="556" y="278" font-size="16" font-weight="700" fill="#111827">Audit</text>
+    <text x="556" y="302" font-size="12" fill="#374151">JSONL trail</text>
+
+</svg>

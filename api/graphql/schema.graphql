@@ -1,0 +1,10 @@
+type Transaction {
+  transactionId: ID!
+  clientId: String!
+  amount: Float!
+  currency: String!
+}
+
+type Query {
+  transaction(id: ID!): Transaction
+}

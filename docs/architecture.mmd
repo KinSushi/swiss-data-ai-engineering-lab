@@ -1,0 +1,7 @@
+flowchart LR
+  A[CSV / JSONL / XML] --> B[Python validation]
+  B --> C[PostgreSQL + JSONB]
+  C --> D[API contracts]
+  D --> E[MLOps artifacts]
+  E --> F[Observability]
+  F --> G[Governance]

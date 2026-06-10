@@ -1,0 +1,22 @@
+{
+  "_id": "tx_001",
+  "client": {
+    "client_id": "C001",
+    "country": "CH",
+    "segment": "retail"
+  },
+  "transaction": {
+    "amount": 125.5,
+    "currency": "CHF",
+    "channel": "card"
+  },
+  "prediction": {
+    "risk_score": 0.12,
+    "decision": "approve"
+  },
+  "tags": [
+    "synthetic",
+    "demo",
+    "document-model"
+  ]
+}

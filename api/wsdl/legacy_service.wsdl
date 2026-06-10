@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="LegacyRiskService" targetNamespace="http://example.com/legacy-risk" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <documentation>SOAP/WSDL legacy awareness example. Do not use for new APIs unless required by enterprise integration.</documentation>
+</definitions>

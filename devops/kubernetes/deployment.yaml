@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: synthetic-risk-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: synthetic-risk-api
+  template:
+    metadata:
+      labels:
+        app: synthetic-risk-api
+    spec:
+      containers:
+        - name: api
+          image: synthetic-risk-api:latest
+          ports:
+            - containerPort: 8000

@@ -1,0 +1,4 @@
+AppTraces
+| where TimeGenerated > ago(1h)
+| where Message has "prediction"
+| summarize Count=count() by SeverityLevel

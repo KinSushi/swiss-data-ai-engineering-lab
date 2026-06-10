@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction>
+  <transaction_id>tx_legacy_001</transaction_id>
+  <client_id>C999</client_id>
+  <amount currency="CHF">250.00</amount>
+  <status>approved</status>
+</transaction>

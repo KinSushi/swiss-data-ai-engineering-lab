@@ -1,0 +1,7 @@
+transaction_id,client_id,account_id,amount,currency,timestamp,country,channel,status
+tx_001,C001,A001,125.50,CHF,2026-06-10T08:00:00Z,CH,card,approved
+tx_002,C002,A002,-25.00,CHF,2026-06-10T08:01:00Z,CH,transfer,review_required
+tx_003,C003,A003,900.00,EUR,2026-06-10T08:02:00Z,FR,card,approved
+tx_003,C003,A003,900.00,EUR,2026-06-10T08:03:00Z,FR,card,duplicate_sample
+tx_004,,A004,42.00,USD,2026-06-10T08:04:00Z,US,atm,approved
+tx_005,C005,A005,300.00,XYZ,2026-06-10T08:05:00Z,CH,card,invalid_currency_sample

@@ -1,0 +1,18 @@
+{
+  "title": "Synthetic Risk API Dashboard",
+  "panels": [
+    {
+      "title": "Prediction count",
+      "type": "stat"
+    },
+    {
+      "title": "Latency",
+      "type": "timeseries"
+    },
+    {
+      "title": "Review rate",
+      "type": "gauge"
+    }
+  ],
+  "schemaVersion": 39
+}

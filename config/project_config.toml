@@ -1,0 +1,7 @@
+[project]
+name = "swiss-data-ai-engineering-lab"
+version = "0.1.0"
+
+[data_quality]
+allowed_currencies = ["CHF", "EUR", "USD", "GBP"]
+fail_on_duplicate_transaction_id = true

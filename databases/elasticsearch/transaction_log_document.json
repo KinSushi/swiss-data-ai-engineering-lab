@@ -1,0 +1,9 @@
+{
+  "@timestamp": "2026-06-10T08:00:01Z",
+  "service": "synthetic-risk-api",
+  "request_id": "req_001",
+  "transaction_id": "tx_001",
+  "latency_ms": 24,
+  "decision": "approve",
+  "level": "INFO"
+}

@@ -1,0 +1,3 @@
+transaction_id	client_id	amount	currency
+tx_001	C001	125.50	CHF
+tx_002	C002	-25.00	CHF

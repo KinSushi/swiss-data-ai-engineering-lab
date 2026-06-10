@@ -1,0 +1,25 @@
+asyncapi: 3.0.0
+info:
+  title: Synthetic Prediction Events
+  version: 0.1.0
+channels:
+  prediction.events:
+    address: prediction.events
+    messages:
+      predictionEvent:
+        payload:
+          type: object
+          properties:
+            request_id:
+              type: string
+            transaction_id:
+              type: string
+            risk_score:
+              type: number
+            decision:
+              type: string
+operations:
+  publishPredictionEvent:
+    action: send
+    channel:
+      $ref: '#/channels/prediction.events'

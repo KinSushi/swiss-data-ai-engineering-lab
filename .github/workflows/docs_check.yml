@@ -1,0 +1,21 @@
+name: Documentation check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required docs and screenshots
+        run: |
+          test -f README.md
+          test -f docs/RECRUITER_GUIDE.md
+          test -f docs/LANGUAGE_CATALOG.md
+          test -f docs/FORMAT_CATALOG.md
+          test -f docs/screenshots/architecture.svg
+          test -f docs/screenshots/language_map.svg
+          test -f docs/screenshots/format_map.svg

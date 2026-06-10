@@ -1,0 +1,36 @@
+openapi: 3.1.0
+info:
+  title: Synthetic Banking Risk API
+  version: 0.1.0
+paths:
+  /health:
+    get:
+      responses:
+        '200':
+          description: Service is healthy
+  /score:
+    post:
+      summary: Score a synthetic transaction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transaction'
+      responses:
+        '200':
+          description: Risk score
+components:
+  schemas:
+    Transaction:
+      type: object
+      required: [transaction_id, client_id, amount, currency]
+      properties:
+        transaction_id:
+          type: string
+        client_id:
+          type: string
+        amount:
+          type: number
+        currency:
+          type: string

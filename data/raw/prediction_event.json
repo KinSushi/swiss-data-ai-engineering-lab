@@ -1,0 +1,16 @@
+{
+  "request_id": "req_001",
+  "transaction_id": "tx_001",
+  "model_name": "synthetic_fraud_risk_scorer",
+  "model_version": "0.1.0",
+  "features": {
+    "amount": 125.5,
+    "currency": "CHF",
+    "channel": "card"
+  },
+  "prediction": {
+    "risk_score": 0.12,
+    "decision": "approve"
+  },
+  "timestamp": "2026-06-10T08:00:01Z"
+}

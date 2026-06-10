@@ -1,0 +1,9 @@
+Package: swissdataailab
+Type: Package
+Title: Swiss Data AI Engineering Lab R Examples
+Version: 0.1.0
+Authors@R: person("KinSushi", "Lab", email = "example@example.com", role = c("aut", "cre"))
+Description: R literacy examples for statistics and risk analytics.
+License: MIT
+Encoding: UTF-8
+LazyData: true

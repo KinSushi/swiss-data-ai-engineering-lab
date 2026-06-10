@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    container_name: swiss-data-ai-lab-app
+    env_file:
+      - .env.example
+    depends_on:
+      - postgres
+    command: ["python", "src/python/quality_checks.py"]
+
+  postgres:
+    image: postgres:16
+    container_name: swiss-data-ai-lab-postgres
+    environment:
+      POSTGRES_DB: banking_lab
+      POSTGRES_USER: banking_user
+      POSTGRES_PASSWORD: change_me_locally
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./databases/postgresql/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+
+volumes:
+  postgres_data:
