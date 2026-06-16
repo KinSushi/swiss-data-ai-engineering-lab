@@ -62,19 +62,19 @@ model governance and auditability
 
 ## Target
 
-Junior Data / DataOps / MLOps / AI Engineer for Swiss regulated, data-intensive and scale-engineering employers.
+Data / DataOps / MLOps / AI Engineer for Swiss regulated, data-intensive and scale-engineering employers.
 
 ## Market-compatible roles
 
-- Junior Data Engineer
+- Data Engineer
 - DataOps Engineer
 - IT Production Engineer
 - Application & Data Support Engineer
 - Risk & Compliance Data Analyst
 - Analytics Engineer
-- Junior MLOps Engineer
-- Junior AI Platform Engineer
-- Junior Data Platform Engineer
+- MLOps Engineer
+- AI Platform Engineer
+- Data Platform Engineer
 - Data Quality Analyst
 - Technical Data Analyst
 
