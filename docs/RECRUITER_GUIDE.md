@@ -50,7 +50,7 @@ This repository is designed to be read in less than ten minutes by a recruiter o
 
 ## One-line signal
 
-Junior Data / DataOps / MLOps / AI engineering literacy for Swiss employers across regulated, data-intensive and scale-engineering environments.
+Data / DataOps / MLOps / AI engineering literacy for Swiss employers across regulated, data-intensive and scale-engineering environments.
 
 ## The core proof
 
