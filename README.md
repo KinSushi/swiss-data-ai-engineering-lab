@@ -142,7 +142,7 @@ MIT — see `LICENSE`.
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 ![Data](https://img.shields.io/badge/data-synthetic%20only-2EA043)
 
-A reproducible engineering lab that demonstrates the **core skills of a junior Data / DataOps / MLOps Engineer**: data-quality checks, file-format validation, public-safety scanning and a tested Python core, all runnable in one command.
+A reproducible engineering lab that demonstrates the **core skills of a Data / DataOps / MLOps Engineer**: data-quality checks, file-format validation, public-safety scanning and a tested Python core, all runnable in one command.
 
 **Honest scope:** this is a *literacy and practice* lab built with **synthetic data only**. The professional core below is what I do hands-on. A broader catalog of languages and formats I have explored lives in a separate file, clearly labelled as exploration, not claimed mastery.
 
@@ -170,15 +170,15 @@ How the core skills below connect to the flagship project repositories:
 
 ```mermaid
 flowchart TD
-    CORE["Professional core<br/>Python · SQL · Linux · Docker · CI/CD"]
-    CORE --> BANK["banking-dataops-monitoring<br/>DataOps · pipeline monitoring"]
-    CORE --> FRAUD["fraud-mlops-control-tower<br/>MLOps · model lifecycle"]
-    CORE --> MIG["database-migration-quality-lab<br/>Migration · data quality"]
-    CORE --> RAG["secure-wealth-rag-assistant<br/>RAG · LLMOps · governance"]
-    BANK --> SWISS["Swiss employer value<br/>reliable, auditable, on-prem-friendly"]
-    FRAUD --> SWISS
-    MIG --> SWISS
-    RAG --> SWISS
+ CORE["Professional core<br/>Python · SQL · Linux · Docker · CI/CD"]
+ CORE --> BANK["banking-dataops-monitoring<br/>DataOps · pipeline monitoring"]
+ CORE --> FRAUD["fraud-mlops-control-tower<br/>MLOps · model lifecycle"]
+ CORE --> MIG["database-migration-quality-lab<br/>Migration · data quality"]
+ CORE --> RAG["secure-wealth-rag-assistant<br/>RAG · LLMOps · governance"]
+ BANK --> SWISS["Swiss employer value<br/>reliable, auditable, on-prem-friendly"]
+ FRAUD --> SWISS
+ MIG --> SWISS
+ RAG --> SWISS
 ```
 
 ---
@@ -223,17 +223,17 @@ pytest
 
 ```
 swiss-data-ai-engineering-lab/
-  README.md
-  requirements.txt
-  .github/workflows/        CI: ruff + pytest
-  src/python/               data-quality core
-  tools/                    format + public-safety validators
-  databases/postgresql/     SQL skill evidence
-  mlops/                    model card, data card, monitoring plan
-  observability/            dashboards, logging notes
-  governance/               AI governance checklist, controls
-  docs/                     recruiter guide, catalogs, diagrams
-  tests/                    pytest suite
+ README.md
+ requirements.txt
+ .github/workflows/ CI: ruff + pytest
+ src/python/ data-quality core
+ tools/ format + public-safety validators
+ databases/postgresql/ SQL skill evidence
+ mlops/ model card, data card, monitoring plan
+ observability/ dashboards, logging notes
+ governance/ AI governance checklist, controls
+ docs/ recruiter guide, catalogs, diagrams
+ tests/ pytest suite
 ```
 
 ---
