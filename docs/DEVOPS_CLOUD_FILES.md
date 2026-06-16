@@ -9,7 +9,7 @@ This section documents the operational files a Data & AI engineer should underst
 - `.env.example` for local configuration without committing real secrets.
 # DevOps and cloud files
 
-This section documents the operational files a junior Data & AI engineer should understand.
+This section documents the operational files a Data & AI engineer should understand.
 
 - Dockerfile and Docker Compose for reproducible local execution.
 - GitHub Actions, GitLab CI, Azure DevOps and Jenkinsfile for CI/CD literacy.
