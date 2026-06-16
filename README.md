@@ -1,108 +1,45 @@
 # Swiss Data & AI Engineering Lab
 
-Personal engineering lab covering the **languages, file formats, data systems, MLOps artifacts, observability files and governance practices** expected from a junior **Data & AI Engineer targeting Swiss employers across regulated, data-intensive and scale-engineering environments**.
+![CI](https://github.com/KinSushi/swiss-data-ai-engineering-lab/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Tests](https://img.shields.io/badge/tests-pytest-green)
+![Lint](https://img.shields.io/badge/lint-ruff-orange)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Data](https://img.shields.io/badge/data-synthetic%20only-2EA043)
 
-This repository is **not** a certification archive, not a private course dump, and not a claim of senior-level mastery across every technology listed here. It is a practical literacy map: each language or file format is shown in a professional context that recruiters and technical screeners can understand.
+A reproducible engineering lab that demonstrates the **core skills of a junior Data / DataOps / MLOps Engineer**: data-quality checks, file-format validation, public-safety scanning and a tested Python core, all runnable in one command.
 
-## Positioning
+**Honest scope:** this is a *literacy and practice* lab built with **synthetic data only**. The professional core below is what I do hands-on. A broader catalog of languages and formats I have explored lives in a separate file, clearly labelled as exploration, not claimed mastery.
 
-**Target profile:** Junior Data / DataOps / MLOps / AI Engineer.
+---
 
-**Core stack:** Python · SQL · PostgreSQL · Linux · Git · Bash · Docker · CI/CD · Data Quality · Monitoring · MLflow foundations · AI Governance.
+## What this proves in 30 seconds
 
-**Employer scope:** banking, insurance, fintech, pharma/life sciences, retail/e-commerce, industry/manufacturing, logistics, energy, public sector, research, consulting/integrators, cloud/platform teams and Swiss scale-ups.
+- A **tested Python core** (`pytest` + `ruff`) for data-quality and format validation.
+- A **public-safety scanner** that blocks secrets, real data and private documents from reaching a public repo.
+- A **one-command demo** on Windows PowerShell and Linux / Git Bash.
+- **Reproducibility discipline**: pinned dependencies, CI on every push, documented run reports.
 
-## Why this project is broad
-
-Swiss employers do not all hire the same data profile. A bank may care first about SQL, controls and auditability. A pharma team may care about traceability and validated pipelines. A retailer may care about analytics, recommendations and event data. A cloud/platform team may care about Docker, CI/CD, Kubernetes and observability. This lab therefore keeps a narrow professional core while showing broad technical literacy.
-
-The common signal is:
-
-```text
-I build reliable data and ML systems: ingestion, SQL, data quality, APIs,
-monitoring, MLflow, Docker, CI/CD, documentation, governance and security.
-```
-
-## Scenario
-
-The lab uses a synthetic **Data & AI Monitoring Platform** scenario. The default dataset is banking-style transaction data because it is useful for regulated systems, but the architecture is intentionally reusable across sectors:
-
-- banking / finance: transaction monitoring, risk, compliance, audit trails;
-- insurance: claims quality checks, fraud triage, pricing data pipelines;
-- pharma / life sciences: validated data flows, traceability, controlled documentation;
-- retail / e-commerce: events, recommendations, customer analytics, product data;
-- industry / IoT: sensor events, anomaly detection, quality monitoring;
-- logistics / transport: operations data, route events, reliability monitoring;
-- consulting / integration: migration, reconciliation, modernization, documentation;
-- platform / cloud teams: CI/CD, containers, observability, infrastructure-as-code.
-
-## What this repository demonstrates
-
-| Area | Demonstrated items |
+| Signal | Evidence |
 |---|---|
-| Core languages | Python, SQL, Bash, Markdown, YAML, TOML, Regex |
-| Data / AI / analytics | R, Julia, SAS, MATLAB, DAX, Power Query M |
-| Backend / enterprise | JavaScript, TypeScript, Java, Scala, Go, Rust, C#, C, C++ |
-| Database / query languages | PL/pgSQL, PL/SQL, T-SQL, Cypher, GraphQL, KQL, SPL, LogQL, jq |
-| Infrastructure / policy | HCL/Terraform, Dockerfile, Makefile, Rego, Ansible YAML, Helm templates |
-| Data formats | CSV, TSV, JSON, JSONL, NDJSON, XML, fixed-width TXT, logs, Parquet notes, ORC notes, Avro schema, Arrow/Feather notes, Delta/Iceberg notes, HDF5 notes |
-| API contracts | OpenAPI, AsyncAPI, Protobuf, GraphQL, Postman, WSDL/SOAP awareness |
-| Databases | PostgreSQL, Oracle, SQL Server, MongoDB, Redis, Elasticsearch/OpenSearch, Neo4j, vector DB concepts, DuckDB |
-| MLOps | MLflow `MLmodel`, model card, data card, monitoring plan, drift notes, audit trail, model binary format notes |
-| DevOps / cloud | Docker, Docker Compose, GitHub Actions, GitLab CI, Azure DevOps, Terraform, Kubernetes, Helm, Ansible |
-| Governance | AI governance checklist, privacy controls, controls matrix, threat model, SBOM, SARIF, OPA/Rego |
-| Employer alignment | finance, insurance, pharma, retail, industry, logistics, public sector, consulting, platform/cloud, AI teams |
+| Data quality | `src/python/quality_checks.py` |
+| Format validation | `tools/validate_formats.py` |
+| Public-safety control | `tools/public_safety_check.py` |
+| Automated tests + lint | `tests/`, `ruff`, GitHub Actions |
 
-## Repository structure
+---
 
-```text
-swiss-data-ai-engineering-lab/
-├── README.md
-├── RUN_WINDOWS_POWERSHELL.md
-├── RUN_THIS_ON_WINDOWS_FIRST.ps1
-├── setup_windows.ps1
-├── publish_repo_windows.ps1
-├── .github/workflows/
-├── api/
-├── data/
-├── databases/
-├── devops/
-├── docs/
-├── domains/
-├── governance/
-├── mlops/
-├── observability/
-├── src/
-├── tests/
-├── tools/
-└── cleanup/
-```
+## Professional core (hands-on)
 
-## Quick demo — Windows PowerShell
+**Python | SQL | PostgreSQL | Linux | Git | Bash | Docker | CI/CD | Data Quality | Monitoring | MLflow foundations | AI Governance.**
 
-Run each command on its own line:
+This is the narrow, credible core I build with. Everything in the demo below runs against it.
 
-```powershell
-cd G:\swiss-data-ai-engineering-lab
-powershell -ExecutionPolicy Bypass -File .\RUN_THIS_ON_WINDOWS_FIRST.ps1
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python src\python\quality_checks.py
-python tools\validate_formats.py
-python tools\public_safety_check.py
-pytest
-```
+---
 
-If you do not know where the project was extracted:
+## Quick demo
 
-```powershell
-Get-ChildItem -Path G:\ -Recurse -Filter RUN_THIS_ON_WINDOWS_FIRST.ps1 -ErrorAction SilentlyContinue | Select-Object FullName
-```
-
-Then `cd` into the folder containing that script.
-
-## Quick demo — Linux / Git Bash
+**Linux / Git Bash**
 
 ```bash
 python -m venv .venv
@@ -114,33 +51,66 @@ python tools/public_safety_check.py
 pytest
 ```
 
-## Screenshots
+**Windows PowerShell**
 
-SVG diagrams are stored in [`docs/screenshots`](docs/screenshots):
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python src\python\quality_checks.py
+python tools\validate_formats.py
+python tools\public_safety_check.py
+pytest
+```
 
-- `architecture.svg`
-- `language_map.svg`
-- `format_map.svg`
-- `database_map.svg`
-- `mlops_lifecycle.svg`
-- `data_quality_dashboard.svg`
-- `observability_dashboard.svg`
-- `governance_controls.svg`
-- `github_recruiter_view.svg`
+---
 
-## Public-safety boundary
+## Repository structure
 
-This repository must only contain synthetic data, educational examples and sanitized screenshots. It must not contain private school documents, certificates, CVs, applications, real banking data, real client data, secrets, passwords, private keys, live-trading claims or salary strategy.
+```
+swiss-data-ai-engineering-lab/
+  README.md
+  requirements.txt
+  .github/workflows/        CI: ruff + pytest
+  src/python/               data-quality core
+  tools/                    format + public-safety validators
+  databases/postgresql/     SQL skill evidence
+  mlops/                    model card, data card, monitoring plan
+  observability/            dashboards, logging notes
+  governance/               AI governance checklist, controls
+  docs/                     recruiter guide, catalogs, diagrams
+  tests/                    pytest suite
+```
+
+---
 
 ## Recruiter reading guide
 
-A recruiter or technical reviewer should read this repository as follows:
+1. `README.md` — the narrative (this file).
+2. `docs/RECRUITER_GUIDE.md` — the role signal.
+3. `src/python/quality_checks.py` + `databases/postgresql/*.sql` — executable core-skill evidence.
+4. `mlops/`, `observability/`, `governance/` — production and responsible-AI maturity.
+5. `docs/LANGUAGE_CATALOG.md` + `docs/FORMAT_CATALOG.md` — broad technical *literacy* (exploration, not claimed mastery).
 
-1. `README.md` for the narrative.
-2. `docs/RECRUITER_GUIDE.md` for the role signal.
-3. `docs/EMPLOYER_MARKET_MAP.md` for sector-by-sector employer alignment.
-4. `docs/LANGUAGE_CATALOG.md` and `docs/FORMAT_CATALOG.md` for technical coverage.
-5. `src/python/quality_checks.py` and `databases/postgresql/*.sql` for executable core skill evidence.
-6. `mlops/`, `observability/` and `governance/` for production and responsible-AI maturity.
+---
 
-The repository is intentionally broad, but the professional core remains narrow and credible: **Python, SQL, PostgreSQL, Bash/Linux, Git, Docker, CI/CD, Data Quality, Monitoring, MLflow and AI Governance**.
+## Why a Swiss employer cares
+
+Swiss teams hire different data profiles. The professional core stays the same; the emphasis shifts:
+
+- **Banking / insurance / fintech:** SQL, controls, auditability, data quality, monitoring.
+- **Pharma / life sciences:** traceability, validated pipelines, documentation discipline.
+- **Retail / e-commerce / industry:** events, APIs, analytics, anomaly monitoring.
+- **Cloud / platform teams:** Docker, CI/CD, observability, reproducibility.
+
+---
+
+## Public-safety boundary
+
+This repository contains **only synthetic data, educational examples and sanitized diagrams**. It must never contain private documents, certificates, CVs, real banking/client/health data, secrets, keys or live-trading content. `public_safety_check.py` enforces this on every run.
+
+---
+
+## License
+
+MIT — see `LICENSE`.
