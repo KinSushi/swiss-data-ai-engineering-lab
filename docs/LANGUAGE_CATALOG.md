@@ -52,7 +52,7 @@ This catalog ranks languages by professional relevance for a Data & AI engineer 
 | Rego | `governance/opa/policy.rego` | Policy-as-code with Open Policy Agent |
 # Language catalog
 
-This catalog ranks languages by professional relevance for a junior Data & AI engineer targeting Swiss regulated environments.
+This catalog ranks languages by professional relevance for a Data & AI engineer targeting Swiss regulated environments.
 
 ## Core languages
 
