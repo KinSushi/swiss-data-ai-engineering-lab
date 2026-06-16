@@ -29,6 +29,25 @@ A reproducible engineering lab that demonstrates the **core skills of a junior D
 
 ---
 
+## Portfolio map
+
+How the core skills below connect to the flagship project repositories:
+
+```mermaid
+flowchart TD
+    CORE["Professional core<br/>Python · SQL · Linux · Docker · CI/CD"]
+    CORE --> BANK["banking-dataops-monitoring<br/>DataOps · pipeline monitoring"]
+    CORE --> FRAUD["fraud-mlops-control-tower<br/>MLOps · model lifecycle"]
+    CORE --> MIG["database-migration-quality-lab<br/>Migration · data quality"]
+    CORE --> RAG["secure-wealth-rag-assistant<br/>RAG · LLMOps · governance"]
+    BANK --> SWISS["Swiss employer value<br/>reliable, auditable, on-prem-friendly"]
+    FRAUD --> SWISS
+    MIG --> SWISS
+    RAG --> SWISS
+```
+
+---
+
 ## Professional core (hands-on)
 
 **Python | SQL | PostgreSQL | Linux | Git | Bash | Docker | CI/CD | Data Quality | Monitoring | MLflow foundations | AI Governance.**
